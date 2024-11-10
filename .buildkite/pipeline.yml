@@ -1,11 +1,11 @@
 steps:
-- label: "domain-specific pipeline runner"
-  plugins:
-  - monorepo-diff#v1.0.1:
-      diff: "git diff --name-only HEAD~1"
-      log_level: "debug"
-      interpolation: false
-      watch:
-      - path: "go.kungfoo.info/"
-        config:
-          trigger: "go.kungfoo.info"
+  - label: "domain-specific pipeline runner"
+    plugins:
+      - monorepo-diff#v1.2.0:
+          diff: "git diff --name-only HEAD~1"
+          log_level: "debug"
+          interpolation: false
+          watch:
+            - path: go.kungfoo.info/
+              config:
+                trigger: "go-kungfoo-info"
