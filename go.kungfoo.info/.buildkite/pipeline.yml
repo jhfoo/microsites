@@ -2,6 +2,4 @@ agents:
   node: any
 steps:
 - label: ":hammer: install dependencies"
-  command: "cd go.kungfoo.info; npm i"
-- label: ":hammer: build statics"
-  command: "cd go.kungfoo.info; npm run build"
+  command: "cd go.kungfoo.info; npm i; npm run build"
