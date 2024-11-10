@@ -2,4 +2,4 @@ agents:
   node: any
 steps:
 - label: ":hammer: install dependencies"
-  command: "cd go.kungfoo.info; npm i; npm run build"
+  command: "cd go.kungfoo.info; npm i; npm run build; scp -r dist/spa/* jhfoo@poutine.kungfoo.info:~"
